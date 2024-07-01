@@ -1,5 +1,8 @@
 {
   "expo": {
+    "experiments": {
+      "typedRoutes": true
+    },
     "name": "hisnek-test",
     "slug": "hisnek-test",
     "scheme": "hisnek-test-app",
