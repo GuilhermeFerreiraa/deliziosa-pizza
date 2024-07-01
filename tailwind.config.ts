@@ -8,9 +8,13 @@ module.exports = {
        heading: "Inter_600SemiBold",
        subtitle: "Inter_500Medium",
        body: "Inter_400Regular", 
-       bold: 'Inter_700Bold'
+       bold: 'Inter_700Bold',
      },
-   },
+     colors: {
+      primary: '#BF0A25',
+      secondary: '#FF9E03'
+     }
+    },
  },
  plugins: [],
 };
