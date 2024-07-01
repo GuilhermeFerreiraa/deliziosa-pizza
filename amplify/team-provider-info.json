@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hisnektest-dev-31013-authRole",
+      "UnauthRoleArn": "arn:aws:iam::234469502908:role/amplify-hisnektest-dev-31013-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::234469502908:role/amplify-hisnektest-dev-31013-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-hisnektest-dev-31013-deployment",
+      "UnauthRoleName": "amplify-hisnektest-dev-31013-unauthRole",
+      "StackName": "amplify-hisnektest-dev-31013",
+      "StackId": "arn:aws:cloudformation:us-east-2:234469502908:stack/amplify-hisnektest-dev-31013/ffc4bf50-3573-11ef-a0db-06835d7b2d0f",
+      "AmplifyAppId": "dv73m31w1d8wm"
+    },
+    "categories": {
+      "auth": {
+        "hisnektestff02671c": {}
+      }
+    }
+  }
+}
