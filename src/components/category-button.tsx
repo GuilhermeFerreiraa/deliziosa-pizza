@@ -8,8 +8,8 @@ type CategoryProps = PressableProps & {
 
 export default function CategoryButton({ title, isSelected, ...rest }: CategoryProps) {
  return (
-  <Pressable className={clsx('bg-slate-800 px-4 justify-center rounded-md h-10', isSelected && 'border-2 border-lime-300')} {...rest}>
-   <Text className='text-slate-100 font-subtitle text-sm'>
+  <Pressable className={clsx('bg-primary px-4 justify-center rounded-lg h-10', isSelected && 'border-2 border-primary bg-slate-100')} {...rest}>
+   <Text className={clsx('text-slate-100 font-subtitle text-sm', isSelected && 'text-primary font-heading')}>
     {title}
    </Text>
   </Pressable>
