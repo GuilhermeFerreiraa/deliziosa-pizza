@@ -9,7 +9,11 @@
     }
   },
   "include": [
+    "**/*.js",
     "**/*.ts",
-    "**/*.tsx"
-, "src/aws-exports.ts"  ]
+    "**/*.tsx",
+    "src/aws-exports.js",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
 }
