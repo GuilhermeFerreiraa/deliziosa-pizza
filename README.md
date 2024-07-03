@@ -1,7 +1,16 @@
 # HISNEK - Deliziosa Pizzaria
 
 ## Visão Geral
-Describe your project briefly here.
+Desenvolvido com Expo, Typescript, Aws Amplify e um Mockdata que simula o retorno de uma query em GraphQL.
+
+- Proposta:
+A proposta do app era trazer uma dinâmica mais visual, com animações durante as transições, e uma autenticação básica, mas que não travasse o usuário na tela princpal. Cumprindo com os requisitos funcionais e técnicos deste desafio!
+
+- Desafio:
+O maior desafio nessa projeto foi resolver conflitos de dependências causados pela própria documentação das bibliotecas utilizadas. Tive problemas com a execução do Aplicativo por conta de uma dependência que não estava na versão correta.
+
+- Resolução:
+para resolver este problema eu pensei em criar um app do zero e instalar apenas as funcionalidades que eu gostaria, uma a uma, então comecei pelo Amplify, onde funcionou logo de cara, rodando o aplicativo nas últimas versões de todas as libs. Feito isso, comecei a bater dependência por dependência para garantir que estava tudo funcionando da maneira correta.
 
 ## Instalação
 
@@ -23,23 +32,13 @@ Describe your project briefly here.
    
 ## Configurar AWS Amplify:
 
+Esclarecimento: Em um cenário real, com fins corporativos ou pessoais, o arquivo `aws-exports.js` deveria estar dentro do `.gitignore`, por se tratar de um arquivo sensível. Neste caso, estou utilizando exclusivamente para fins de testes sobre o projeto.
+
 - Instalar o Aws-amplify CLI
 ```bash
 npm install -g @aws-amplify/cli
 # ou
 yarn global add @aws-amplify/cli
-```
-
-- Navegue até o diretório do projeto clonado e execute:
-```bash
-amplify init
-```
-* siga as instruções para configurar o projeto. O amplify pode detecar a config existente se você já tiver configurado um projeto com `amplify pull`
-
-- realizar o pull do diretório já configurado
-(importante ressaltar que é necessário o arquivo aws-exports.js na raiz da pasta `/src`)
-```bash
-amplify pull --appId d2sy8fk6xvuoun --envName test
 ```
 
 *caso de dúvidas entre no site: https://docs.amplify.aws/gen1/react-native/prev/build-a-backend/
