@@ -62,8 +62,6 @@ export default function SignUp() {
 
       setIsLoading(false);
     } catch (err: any) {
-      console.log('error: ', err);
-
       if (err.code === 'UserNotConfirmedException') {
         Alert.alert('Por favor, confirme seu email antes de fazer login.');
       } else {
