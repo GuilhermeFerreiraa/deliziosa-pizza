@@ -2,7 +2,7 @@ import CategoryButton from "@/components/category-button";
 import Header from "@/components/header";
 import Product from "@/components/product";
 import { useCartStore } from "@/stores/cart-store";
-import { CATEGORIES, MENU, ProductProps } from "@/utils/data/products";
+import { CATEGORIES, MENU, ProductProps } from "@/graphql/products";
 import { Link } from "expo-router";
 import { useRef, useState } from "react";
 import { FlatList, SectionList, Text, View } from "react-native";

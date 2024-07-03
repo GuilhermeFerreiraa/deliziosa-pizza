@@ -13,7 +13,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/aws-exports.js",
+    "App.tsx_",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "jest.config.js__"  ]
 }

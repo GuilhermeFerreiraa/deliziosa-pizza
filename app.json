@@ -1,15 +1,12 @@
 {
   "expo": {
-    "experiments": {
-      "typedRoutes": true
-    },
     "name": "hisnek-test",
     "slug": "hisnek-test",
     "scheme": "hisnek-test-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }

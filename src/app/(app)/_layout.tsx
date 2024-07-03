@@ -1,7 +1,6 @@
 import { Stack } from "expo-router";
 import { SafeAreaView, StatusBar } from "react-native";
 
-
 export default function Layout() {
  return (
   <SafeAreaView className="flex-1 bg-[#BF0A25]">

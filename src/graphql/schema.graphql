@@ -1,0 +1,25 @@
+type Ingredient {
+  name: String!
+}
+
+type Product {
+  id: ID!
+  title: String!
+  price: Float!
+  description: String
+  cover: String
+  thumbnail: String
+  ingredients: [Ingredient!]
+}
+
+type MenuCategory {
+  title: String!
+  data: [Product!]!
+}
+
+type Query {
+  getMenu: [MenuCategory!]!
+  getProducts: [Product!]!
+  getProductById(id: ID!): Product
+  getCategories: [String!]!
+}

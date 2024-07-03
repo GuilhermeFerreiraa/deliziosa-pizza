@@ -10,12 +10,22 @@
       "StackName": "amplify-hisnektest-dev-31013",
       "StackId": "arn:aws:cloudformation:us-east-2:234469502908:stack/amplify-hisnektest-dev-31013/ffc4bf50-3573-11ef-a0db-06835d7b2d0f",
       "AmplifyAppId": "dv73m31w1d8wm"
+    }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hisnektest-test-25135-authRole",
+      "UnauthRoleArn": "arn:aws:iam::234469502908:role/amplify-hisnektest-test-25135-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::234469502908:role/amplify-hisnektest-test-25135-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-hisnektest-test-25135-deployment",
+      "UnauthRoleName": "amplify-hisnektest-test-25135-unauthRole",
+      "StackName": "amplify-hisnektest-test-25135",
+      "StackId": "arn:aws:cloudformation:sa-east-1:234469502908:stack/amplify-hisnektest-test-25135/d45a8f10-38b7-11ef-a26a-0251742b8db3",
+      "AmplifyAppId": "d2sy8fk6xvuoun"
     },
     "categories": {
       "auth": {
-        "hisnektestff02671c": {}
-      },
-      "api": {
         "hisnektest": {}
       }
     }

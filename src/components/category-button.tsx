@@ -1,5 +1,5 @@
-import { Text, Pressable, PressableProps } from 'react-native'
 import { clsx } from 'clsx';
+import { Pressable, PressableProps, Text } from 'react-native';
 
 type CategoryProps = PressableProps & {
  title: string;

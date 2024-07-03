@@ -1,9 +1,7 @@
 import { Button } from "@/components/button";
-import { Entypo, Feather } from "@expo/vector-icons";
 import { Link, useRouter } from "expo-router";
 import { Image, ImageBackground, Text } from "react-native";
 import Animated, { FadeInDown } from "react-native-reanimated";
-import colors from "tailwindcss/colors";
 
 const img_background_ = require('@/assets/background.png');
 const img_logo_ = require('@/assets/logo.png');
@@ -36,7 +34,7 @@ export default function Login() {
         </Text>
         <Text className='text-white text-base font-body'>
           Entrar {" "}
-          <Link className='underline font-subtitle' href='/(app)'>
+          <Link className='underline font-subtitle' href='(app)'>
             sem cadastro
           </Link>
         </Text>

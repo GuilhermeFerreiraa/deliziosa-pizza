@@ -1,13 +1,12 @@
-import { Image, Text, View } from "react-native";
-import { useLocalSearchParams, useNavigation } from "expo-router";
-import { PRODUCTS } from "@/utils/data/products";
-import { formatCurrency } from "@/utils/functions/format-currency";
 import { Button } from "@/components/button";
-import { Feather } from "@expo/vector-icons";
 import { LinkButton } from "@/components/link-button";
+import { PRODUCTS } from "@/graphql/products";
 import { useCartStore } from "@/stores/cart-store";
-import { Redirect } from "expo-router";
-import Animated, { FadeInDown, FadeInLeft, FadeInUp, FadeOut, FadeOutUp, SlideInLeft } from "react-native-reanimated";
+import { formatCurrency } from "@/utils/functions/format-currency";
+import { Feather } from "@expo/vector-icons";
+import { Redirect, useLocalSearchParams, useNavigation } from "expo-router";
+import { Image, Text, View } from "react-native";
+import Animated, { FadeInDown } from "react-native-reanimated";
 import colors from "tailwindcss/colors";
 
 export default function Product() {

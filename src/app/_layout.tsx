@@ -9,17 +9,10 @@ import {
 } from '@expo-google-fonts/inter';
 import { useFonts } from "expo-font";
 import Loading from "@/components/loading";
-import { Amplify } from "aws-amplify";
-import config from '@/aws-exports'
 
-const mockApiEndpoint = 'http://192.168.0.180:20002/graphql'
-
-const updatedAwsConfig = {
- ...config,
- aws_appsync_graphqlEndpoint: mockApiEndpoint,
-};
-
-Amplify.configure(updatedAwsConfig);
+import { Amplify } from 'aws-amplify';
+import awsconfig from '@/aws-exports';
+Amplify.configure(awsconfig);
 
 export const unstable_settings = {
  initialRouteName: 'index',
@@ -50,7 +43,9 @@ const RootLayout = () => {
     }}
    >
     <Stack.Screen name="index" options={{ headerShown: false }} />
-    <Stack.Screen name="sign-in" options={{ presentation: 'modal' }} />
+    <Stack.Screen name="sign-in" options={{ headerShown: false }} />
+    <Stack.Screen name="sign-up" options={{ headerShown: false, }} />
+    <Stack.Screen name="confirm-code" options={{ headerShown: false }} />
    </Stack>
   </SafeAreaView>
  )

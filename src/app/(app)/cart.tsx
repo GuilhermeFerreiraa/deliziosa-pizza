@@ -11,11 +11,11 @@ import { LinkButton } from "@/components/link-button";
 import { ProductCartProps, useCartStore } from "@/stores/cart-store";
 import { formatCurrency } from "@/utils/functions/format-currency";
 import { Entypo, Feather } from "@expo/vector-icons";
+import clsx from "clsx";
 import { useNavigation } from "expo-router";
 import { useState } from "react";
-import Animated, { FadeInDown, FadeInUp, FadeOutDown } from "react-native-reanimated";
+import Animated, { FadeInDown, FadeOutDown } from "react-native-reanimated";
 import colors from "tailwindcss/colors";
-import clsx from "clsx";
 
 export default function Cart() {
   const cartStore = useCartStore();
