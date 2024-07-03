@@ -30,15 +30,15 @@ export default function SignIn() {
     try {
       await SignInSchema.validate(values, { abortEarly: false });
 
-      await Auth.signIn(values.email, values.password);
+      const res = await Auth.signIn(values.email, values.password);
 
       router.push('(app)');
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
         Alert.alert('Por favor, verifique os campos.', err.errors.join('\n'));
       } else {
+        Alert.alert('Essas credenciais não estão corretas. Por favor, verifique os dados e tente novamente.');
         console.log('error: ', err);
-        Alert.alert('Houve um erro inesperado. Tente novamente mais tarde.');
       }
     } finally {
       setIsLoading(false);
