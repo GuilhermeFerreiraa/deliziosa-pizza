@@ -67,9 +67,9 @@ export default function Cart() {
     <Animated.View entering={FadeInDown.delay(300)} className="flex-1 pt-8">
       <Header title="Seu carrinho" />
       <KeyboardAwareScrollView contentContainerStyle={{ flex: 1 }}>
-        <ScrollView contentContainerStyle={{ flex: 1 }}>
-          <View className={clsx("p-5 flex-1", cartStore.products.length == 0 && ' items-center justify-center')}>
-            {cartStore.products.length > 0 ? (
+        <View className={clsx("p-5 flex-1", cartStore.products.length == 0 && ' items-center justify-center')}>
+          {cartStore.products.length > 0 ? (
+            <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
               <View className="border-b border-slate-800">
                 {cartStore.products.map((product) => (
                   <Product
@@ -94,16 +94,16 @@ export default function Cart() {
                   placeholder="Informe o endereço de entrega com rua, bairro, CEP, número e complemento"
                 />
               </View>
-            ) : (
-              <Animated.View entering={FadeInDown.delay(300)} className="flex-col justify-center items-center">
-                <Entypo name="emoji-sad" color={colors.slate[500]} size={24} />
-                <Text className="font-heading text-slate-500 text-center text-base mr-2">
-                  Seu carrinho está vazio.
-                </Text>
-              </Animated.View>
-            )}
-          </View>
-        </ScrollView>
+            </ScrollView>
+          ) : (
+            <Animated.View entering={FadeInDown.delay(300)} className="flex-col justify-center items-center">
+              <Entypo name="emoji-sad" color={colors.slate[500]} size={24} />
+              <Text className="font-heading text-slate-500 text-center text-base mr-2">
+                Seu carrinho está vazio.
+              </Text>
+            </Animated.View>
+          )}
+        </View>
       </KeyboardAwareScrollView>
 
 
